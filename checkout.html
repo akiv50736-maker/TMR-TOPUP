@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>TMR MOTO - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="logo">TMR MOTO</div>
+    <ul class="menu">
+      <li><a href="index.html">হোম</a></li>
+      <li><a href="products.html">পণ্য</a></li>
+      <li><a href="offers.html">অফার</a></li>
+      <li><a href="blog.html">ব্লগ</a></li>
+      <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+      <li><a href="contact.html">যোগাযোগ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Checkout Form ===== -->
+  <section class="checkout">
+    <h2>🛒 Checkout</h2>
+    <form id="orderForm">
+      <label for="name">নাম:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">ফোন নাম্বার:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="game">গেম:</label>
+      <select id="game" name="game" required>
+        <option value="freefire">Free Fire</option>
+        <option value="pubg">PUBG</option>
+        <option value="mlbb">MLBB</option>
+      </select>
+
+      <label for="amount">পরিমাণ (৳):</label>
+      <input type="number" id="amount" name="amount" required min="10">
+
+      <label for="payment">পেমেন্ট অপশন:</label>
+      <select id="payment" name="payment" required>
+        <option value="bkash">
