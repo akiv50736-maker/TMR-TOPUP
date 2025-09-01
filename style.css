@@ -1,0 +1,114 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5e2ced;
+  padding: 15px 20px;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.navbar .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Banner ===== */
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #5e2ced, #8256e6);
+  color: white;
+}
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.banner .btn {
+  background: white;
+  color: #5e2ced;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Products ===== */
+.products {
+  padding: 30px 20px;
+  text-align: center;
+}
+.products h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover { transform: scale(1.05); }
+.card img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+.card h3 { font-size: 18px; margin-bottom: 5px; }
+.card p { margin-bottom: 10px; }
+.card .btn {
+  display: inline-block;
+  background: #5e2ced;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Features ===== */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  background: #fff;
+}
+.feature { text-align: center; max-width: 200px; }
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #5e2ced;
+  color: white;
+}
+footer .payments img {
+  margin: 0 5px;
+}
